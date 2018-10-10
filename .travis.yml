@@ -2,6 +2,8 @@ language: node_js
 node_js:
   - "iojs"
   - "10"
+  services:
+  - postgresql
   postgresql: "9.4"
   before_install:
   - mysql -e 'CREATE DATABASE travis_test;'
